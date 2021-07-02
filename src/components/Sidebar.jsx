@@ -41,7 +41,7 @@ const Sidebar = (props) => {
                         <hr className={classes.border} />
                         <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" my="1rem">
                             <h2>Flag</h2>
-                            <img src={process.env.PUBLIC_URL + props.selectedCountry.flag} alt="Flag" height="32px" />
+                            <img src={props.selectedCountry.flag} alt="Flag" height="32px" />
                         </Box>
                         {
                             [['Capital', props.selectedCountry.capital], ['Population', props.selectedCountry.population], ['Region', props.selectedCountry.region]].map((text) => {

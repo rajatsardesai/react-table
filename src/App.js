@@ -86,7 +86,7 @@ function App() {
                     <TableRow onClick={() => selectedData(country)} onClickCapture={toggleDrawer(anchor, true)} className={classes.cursor} key={index}>
                       <TableCell component="th" data-heading="Name" className="td" scope="row">{country.name}</TableCell>
                       <TableCell align="right" data-heading="Flag" className="td">
-                        <img src={process.env.PUBLIC_URL + country.flag} alt="Flag" width="32px" />
+                        <img src={country.flag} alt="Flag" width="32px" />
                       </TableCell>
                       <TableCell align="right" data-heading="Capital" className="td">
                         {country.capital}
